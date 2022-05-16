@@ -2,20 +2,18 @@
 session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
-if(isset($_GET['restoreid']))
-{
-    $rid=intval($_GET['restoreid']);
-    $sql="update tbladmin set Status='1' where ID='$rid'";
-    $query=$dbh->prepare($sql);
-    $query->bindParam(':rid',$rid,PDO::PARAM_STR);
+if (isset($_GET['restoreid'])) {
+    $rid = intval($_GET['restoreid']);
+    $sql = "update tbladmin set Status='1' where ID='$rid'";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':rid', $rid, PDO::PARAM_STR);
     $query->execute();
-    if ($query->execute()){
-        echo "<script>alert('User Restored');</script>"; 
+    if ($query->execute()) {
+        echo "<script>alert('User Restored');</script>";
         echo "<script>window.location.href = 'userregister.php'</script>";
-    }else{
+    } else {
         echo '<script>alert("update failed! try again later")</script>';
     }
-    
 }
 ?>
 <div class="card-body table-responsive p-3">
@@ -31,32 +29,28 @@ if(isset($_GET['restoreid']))
                 <th class="" style="width: 15%;">Action</th>
             </tr>
         </thead>
-        <!--  Author Name: Nikhil Bhalerao From India 
- for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
- Visit website : www.nikhilbhalerao.com -->
-<tbody>
+
+        <tbody>
             <?php
-            $sql="SELECT * from tbladmin where Status='0' ";
-            $query = $dbh -> prepare($sql);
+            $sql = "SELECT * from tbladmin where Status='0' ";
+            $query = $dbh->prepare($sql);
             $query->execute();
-            $results=$query->fetchAll(PDO::FETCH_OBJ);
-            $cnt=1;
-            if($query->rowCount() > 0)
-            {
-                foreach($results as $row)
-                {    
-                    ?>
+            $results = $query->fetchAll(PDO::FETCH_OBJ);
+            $cnt = 1;
+            if ($query->rowCount() > 0) {
+                foreach ($results as $row) {
+            ?>
                     <tr>
-                        <td class="text-center"><?php echo htmlentities($cnt);?></td>
-                        <td class="font-w600"><?php  echo htmlentities($row->UserName);?></td>
-                        <td class="font-w600"><?php  echo htmlentities($row->MobileNumber);?></td>
-                        <td class="font-w600"><?php  echo htmlentities($row->Email);?></td>
+                        <td class="text-center"><?php echo htmlentities($cnt); ?></td>
+                        <td class="font-w600"><?php echo htmlentities($row->UserName); ?></td>
+                        <td class="font-w600"><?php echo htmlentities($row->MobileNumber); ?></td>
+                        <td class="font-w600"><?php echo htmlentities($row->Email); ?></td>
                         <td class="font-w600">
-                            <span class="badge badge-info"><?php  echo htmlentities($row->AdminRegdate);?></span>
+                            <span class="badge badge-info"><?php echo htmlentities($row->AdminRegdate); ?></span>
                         </td>
-                        <td class=""><a href="deleted_users.php?restoreid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Restore user ?');" title="Restore this User">restore</i></a> </td>
+                        <td class=""><a href="deleted_users.php?restoreid=<?php echo ($row->ID); ?>" onclick="return confirm('Do you really want to Restore user ?');" title="Restore this User">restore</i></a> </td>
                     </tr>
-                    <?php $cnt=$cnt+1;
+            <?php $cnt = $cnt + 1;
                 }
             } ?>
         </tbody>
