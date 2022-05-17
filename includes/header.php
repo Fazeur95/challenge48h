@@ -92,9 +92,7 @@
    
    
     <ul class="navbar-nav navbar-nav-left">
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="dashboard.php">Dashboard</a>
-          </li>
+        
           <li class="nav-item dropdown">
             <a class="nav-link" href="manage_event.php">Manage Events</a>
           </li>
@@ -156,6 +154,9 @@
                                     }
                                 } ?> 
             </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="dashboard.php">Dashboard</a>
           </li>
               <?php 
                 } 
