@@ -109,10 +109,10 @@ if (isset($_GET['delid'])) {
                                         <thead>
                                             <tr>
                                                 <th class="text-center">No.</th>
-                                                <th class="">Name</th>
-                                                <th class="text-center">Mobile number</th>
-                                                <th class="">Email</th>
-                                                <th class=" text-center">Date registered</th>
+                                                <th class="">Nom</th>
+                                                <th class="text-center">Numéro de téléphone</th>
+                                                <th class="">Adresse Email</th>
+                                                <th class=" text-center">Date d'enregistrement</th>
                                                 <th class="text-center" style="width: 15%;">Action</th>
                                             </tr>
                                         </thead>
