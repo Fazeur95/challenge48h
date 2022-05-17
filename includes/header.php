@@ -92,9 +92,7 @@
    
    
     <ul class="navbar-nav navbar-nav-left">
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="dashboard.php">Dashboard</a>
-          </li>
+        
           <li class="nav-item dropdown">
             <a class="nav-link" href="manage_event.php">Manage Events</a>
           </li>
@@ -157,6 +155,9 @@
                                 } ?> 
             </div>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="dashboard.php">Dashboard</a>
+          </li>
               <?php 
                 } 
             }
@@ -172,21 +173,7 @@
             </div>
           </li>
 
-         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=919423979339&text=Hi%20Nikhil,%20I%20saw%20your%20Project%20named%20as%20Royal%20Event%20Software.%20I%20need%20your%20help%20for%20the%20same.
-          ">
-               
-                <span class="menu-title">Contact Author</span>
-            </a>
-                  </li> 
-
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.youtube.com/c/NikhilBhalerao?sub_confirmation=1
-        ">
-               
-                <span class="menu-title">Other Projects</span>
-            </a>
-        </li>
+         
     
         </ul>
 
