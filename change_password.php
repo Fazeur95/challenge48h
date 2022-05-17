@@ -35,7 +35,7 @@ if (strlen($_SESSION['odmsaid'] == 0)) {
   <script type="text/javascript">
     function checkpass() {
       if (document.changepassword.newpassword.value != document.changepassword.confirmpassword.value) {
-        alert('New Password and Confirm Password field does not match');
+        alert("Le nouveau mot de passe et l'ancien ne correspondent pas !");
         document.changepassword.confirmpassword.focus();
         return false;
       }
@@ -61,19 +61,19 @@ if (strlen($_SESSION['odmsaid'] == 0)) {
                   <div class="card-body">
                     <form method="post" onsubmit="return checkpass();" name="changepassword">
                       <div class="form-group row">
-                        <label class="col-12" for="register1-username">Current Password:</label>
+                        <label class="col-12" for="register1-username">Ancien Mot de Passe:</label>
                         <div class="col-12">
                           <input type="password" class="form-control" name="currentpassword" id="currentpassword" required='true'>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label class="col-12" for="register1-email">New Password:</label>
+                        <label class="col-12" for="register1-email">Nouveau Mot de passe:</label>
                         <div class="col-12">
                           <input type="password" class="form-control" name="newpassword" class="form-control" minlength="4" required="true">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label class="col-12" for="register1-password">Confirm Password:</label>
+                        <label class="col-12" for="register1-password">Confirmer le Mot de Passe:</label>
                         <div class="col-12">
                           <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" minlength="4" required='true'>
                         </div>
@@ -82,7 +82,7 @@ if (strlen($_SESSION['odmsaid'] == 0)) {
                       <div class="form-group row">
                         <div class="col-12">
                           <button type="submit" class="btn btn-info" name="submit">
-                            <i class="fa fa-plus "></i> Change
+                            <i class="fa fa-plus "></i> Changer
                           </button>
                         </div>
                       </div>
