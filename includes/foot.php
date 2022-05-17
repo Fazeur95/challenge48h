@@ -39,6 +39,7 @@
     });
   </script>
   <script >
+      
  function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
     function checkReady() {

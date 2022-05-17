@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-4">
            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo " href="dashboard.php"><img class="img-avatar" style="height: 70px; width: auto;" src="assets/img/companyimages/logo.jpg" alt=""></a>
+            <a class="navbar-brand brand-logo " href="manage_event.php"><img class="img-avatar" style="height: 70px; width: auto;" src="assets/img/companyimages/logo.jpg" alt=""></a>
             
 
           </div>          
