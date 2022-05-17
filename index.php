@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
         if ($query->rowCount() > 0) {
             foreach ($results as $row) {
                 if ($row->Status == "1") {
-                    echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
+                    echo "<script type='text/javascript'> document.location ='manage_event.php'; </script>";
                 } else {
                     echo "<script>
                     alert('Your account was disabled Approach Admin');document.location ='index.php';
