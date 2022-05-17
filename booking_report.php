@@ -32,7 +32,7 @@ check_login();
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">View Booking details</h5>
+                        <h5 class="modal-title">Afficher les détails de la réservation</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -41,7 +41,7 @@ check_login();
                         <?php @include("view_newbooking.php"); ?>
                       </div>
                       <div class="modal-footer ">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
                       </div>
 
                     </div>
