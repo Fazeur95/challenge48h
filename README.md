@@ -12,15 +12,6 @@
 
 ***
 
-### Languages utilisés :
--
--
-
-***
-### Fonctionnalitées :
-- 
-
-***
 
 
 
