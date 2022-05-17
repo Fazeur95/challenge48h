@@ -22,7 +22,7 @@ check_login();
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="modal-header">
-                  <h5 class="modal-title" style="float: left;">New Bookings</h5>
+                  <h5 class="modal-title" style="float: left;">Nouvelles réservations</h5>
                 </div>
 
 
@@ -55,12 +55,12 @@ check_login();
                     <thead>
                       <tr>
                         <th class="text-center"></th>
-                        <th>Booking ID</th>
-                        <th class="d-none d-sm-table-cell">Cutomer Name</th>
-                        <th class="d-none d-sm-table-cell">Mobile Number</th>
-                        <th class="d-none d-sm-table-cell">Email</th>
-                        <th class="d-none d-sm-table-cell">Booking Date</th>
-                        <th class="d-none d-sm-table-cell">Status</th>
+                        <th>ID de réservation</th>
+                        <th class="d-none d-sm-table-cell">Nom du client</th>
+                        <th class="d-none d-sm-table-cell">Numéro de téléphone portable</th>
+                        <th class="d-none d-sm-table-cell">Adresse Email</th>
+                        <th class="d-none d-sm-table-cell">Date de réservation</th>
+                        <th class="d-none d-sm-table-cell">Statut</th>
                         <th class=" Text-center" style="width: 15%;">Action</th>
                       </tr>
                     </thead>
