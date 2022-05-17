@@ -21,22 +21,22 @@ check_login();
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="modal-header">
-                  <h5 class="modal-title" style="float: left;">Between Dates Reports</h5>
+                  <h5 class="modal-title" style="float: left;">Rapports entre les dates</h5>
                 </div>
                 <div class="col-md-12 mt-4">
                   <form class="forms-sample" method="post" enctype="multipart/form-data" class="form-horizontal">
                     <div class="row ">
                       <div class="form-group col-md-6 ">
-                        <label for="exampleInputPassword1">From Date</label>
+                        <label for="exampleInputPassword1">À Partir de la date</label>
                         <input type="date" id="fromdate" name="fromdate" value="" class="form-control" required="">
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">To Date </label>
+                        <label for="exampleInputName1">À la date </label>
                         <input type="date" id="todate" name="todate" value="" class="form-control" required="">
                       </div>
                     </div>
 
-                    <button type="submit" style="float: left;" name="search" id="submit" class="btn btn-info btn-sm  mb-4">Search</button>
+                    <button type="submit" style="float: left;" name="search" id="submit" class="btn btn-info btn-sm  mb-4">Rechercher</button>
                   </form>
                 </div>
               </div>
@@ -49,7 +49,7 @@ check_login();
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">View Booking details</h5>
+                        <h5 class="modal-title">Afficher les détails de la réservation</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -58,7 +58,7 @@ check_login();
                         <?php @include("view_newbooking.php"); ?>
                       </div>
                       <div class="modal-footer ">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
                       </div>
 
                     </div>
@@ -81,12 +81,12 @@ check_login();
                       <thead>
                         <tr>
                           <th class="text-center"></th>
-                          <th>Booking ID</th>
-                          <th class="d-none d-sm-table-cell">Cutomer Name</th>
-                          <th class="d-none d-sm-table-cell">Mobile Number</th>
-                          <th class="d-none d-sm-table-cell">Email</th>
-                          <th class="d-none d-sm-table-cell">Booking Date</th>
-                          <th class="d-none d-sm-table-cell">Status</th>
+                          <th>ID de réservation</th>
+                          <th class="d-none d-sm-table-cell">Nom du client</th>
+                          <th class="d-none d-sm-table-cell">Numéro de téléphone portable</th>
+                          <th class="d-none d-sm-table-cell">Adresse Email</th>
+                          <th class="d-none d-sm-table-cell">Date de réservation</th>
+                          <th class="d-none d-sm-table-cell">Statut</th>
                           <th class=" Text-center" style="width: 15%;">Action</th>
                         </tr>
                       </thead>
@@ -140,12 +140,12 @@ check_login();
                       <thead>
                         <tr>
                           <th class="text-center"></th>
-                          <th>Booking ID</th>
-                          <th class="d-none d-sm-table-cell">Cutomer Name</th>
-                          <th class="d-none d-sm-table-cell">Mobile Number</th>
-                          <th class="d-none d-sm-table-cell">Email</th>
-                          <th class="d-none d-sm-table-cell">Booking Date</th>
-                          <th class="d-none d-sm-table-cell">Status</th>
+                          <th>ID de réservation</th>
+                          <th class="d-none d-sm-table-cell">Nom du client</th>
+                          <th class="d-none d-sm-table-cell">Numéro de téléphone portable</th>
+                          <th class="d-none d-sm-table-cell">Adresse Email</th>
+                          <th class="d-none d-sm-table-cell">Date de réservation</th>
+                          <th class="d-none d-sm-table-cell">Statut</th>
                           <th class=" Text-center" style="width: 15%;">Action</th>
                         </tr>
                       </thead>
